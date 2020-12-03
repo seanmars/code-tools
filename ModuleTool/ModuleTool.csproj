@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <AvaloniaResource Include="Assets\**" />
+    <Folder Include="Source\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\XunQinJi\database-server\DatabaseServer\Modules\ComboSkill.cs" Link="Source\ComboSkill.cs" />
+    <Compile Include="..\..\..\XunQinJi\database-server\DatabaseServer\Modules\Common\ServerInfo.cs" Link="Source\ServerInfo.cs" />
+    <Compile Include="..\..\..\XunQinJi\database-server\DatabaseServer\Modules\Counter.cs" Link="Source\Counter.cs" />
+    <Compile Include="..\..\..\XunQinJi\database-server\DatabaseServer\Modules\Currency.cs" Link="Source\Currency.cs" />
+    <Compile Include="..\..\..\XunQinJi\database-server\DatabaseServer\Modules\DecorativeEquipment.cs" Link="Source\DecorativeEquipment.cs" />
+    <Compile Include="..\..\..\XunQinJi\database-server\DatabaseServer\Modules\Flag.cs" Link="Source\Flag.cs" />
+    <Compile Include="..\..\..\XunQinJi\database-server\DatabaseServer\Modules\Mail.cs" Link="Source\Mail.cs" />
+    <Compile Include="..\..\..\XunQinJi\database-server\DatabaseServer\Modules\MailItem.cs" Link="Source\MailItem.cs" />
+    <Compile Include="..\..\..\XunQinJi\database-server\DatabaseServer\Modules\Quest.cs" Link="Source\Quest.cs" />
+    <Compile Include="..\..\..\XunQinJi\database-server\DatabaseServer\Modules\Role.cs" Link="Source\Role.cs" />
+    <Compile Include="..\..\..\XunQinJi\database-server\DatabaseServer\Modules\Skill.cs" Link="Source\Skill.cs" />
+    <Compile Include="..\..\..\XunQinJi\database-server\DatabaseServer\Modules\User.cs" Link="Source\User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.9.12" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.9.12" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.9.12" />
+  </ItemGroup>
+</Project>
